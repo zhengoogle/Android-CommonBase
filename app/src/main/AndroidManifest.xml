@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.simple.common">
 
-
-
     <application
         android:name=".base.BaseApp"
         android:allowBackup="true"
@@ -19,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".test.exam1.DownloadExamActivity" />
-        <activity android:name=".test.utils.log.LogExam1Activity"></activity>
+        <activity android:name=".test.utils.log.LogExam1Activity" />
+        <activity android:name=".debug.file.path.PathTestActivity"></activity>
     </application>
 
 </manifest>

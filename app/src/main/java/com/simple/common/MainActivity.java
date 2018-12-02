@@ -1,8 +1,10 @@
 package com.simple.common;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.simple.common.base.utils.PathUtils;
+import com.simple.common.debug.file.path.PathTestActivity;
 import com.simple.fwlibrary.base.comp.FwPermissionActivity;
 import com.simple.fwlibrary.log.xlog.XLog;
 
@@ -36,9 +38,9 @@ public class MainActivity extends FwPermissionActivity {
 
     @Override
     public void loadDatas() {
-//        Intent intent = new Intent(this,LogExam1Activity.class);
-//        startActivity(intent);
-//        finish();
+        Intent intent = new Intent(this,PathTestActivity.class);
+        startActivity(intent);
+        finish();
 
 //        try {
 //            FwMiniHttpServer.getInstance(8080).start();
