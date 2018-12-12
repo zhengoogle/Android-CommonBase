@@ -10,6 +10,10 @@ package com.simple.common.$doc;
  * ------安卓文件路径知识整理
  * ------Blog:
  * ---------https://blog.csdn.net/u010937230/article/details/73303034/
+ * -
+ * ---Android 工具类归档
+ * ------Json工具类{@link com.simple.common.base.utils.JsonUtils}
+ * ------SharedPreferences工具类{@link com.simple.common.base.utils.SPUtils}
  */
 
 public class ProjDoc {

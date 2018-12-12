@@ -5,7 +5,7 @@
     <application
         android:name=".base.BaseApp"
         android:allowBackup="true"
-        android:icon="@mipmap/animal_bird_sc_128px"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat">
@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".test.exam1.DownloadExamActivity" />
         <activity android:name=".test.utils.log.LogExam1Activity" />
-        <activity android:name=".debug.file.path.PathTestActivity"></activity>
+        <activity android:name=".debug.file.path.PathTestActivity" />
+        <activity android:name=".view.image.ImageViewActivity"></activity>
     </application>
 
 </manifest>

@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import com.simple.common.base.utils.PathUtils;
 import com.simple.common.debug.file.path.PathTestActivity;
+import com.simple.common.view.image.ImageViewActivity;
 import com.simple.fwlibrary.base.comp.FwPermissionActivity;
 import com.simple.fwlibrary.log.xlog.XLog;
 
@@ -38,7 +39,7 @@ public class MainActivity extends FwPermissionActivity {
 
     @Override
     public void loadDatas() {
-        Intent intent = new Intent(this,PathTestActivity.class);
+        Intent intent = new Intent(this,ImageViewActivity.class);
         startActivity(intent);
         finish();
 
