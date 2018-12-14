@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.simple.common">
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:name=".base.BaseApp"
         android:allowBackup="true"
@@ -19,7 +24,48 @@
         <activity android:name=".test.exam1.DownloadExamActivity" />
         <activity android:name=".test.utils.log.LogExam1Activity" />
         <activity android:name=".debug.file.path.PathTestActivity" />
-        <activity android:name=".view.image.ImageViewActivity"></activity>
+        <activity android:name=".view.image.ImageViewActivity" />
+        <activity android:name=".view.tab.TabLayoutActivity" />
+        <activity android:name=".view.toolbar.AppBarActivity" />
+        <activity
+            android:name=".android.activity.exam.exam1.TestBasicActivity"
+            android:label="@string/title_activity_test_basic" />
+        <activity
+            android:name=".android.activity.exam.exam1.BottomNavActivity"
+            android:label="@string/title_activity_bottom_nav" />
+        <activity android:name=".android.activity.exam.exam1.TestEmptyActivity" />
+        <activity
+            android:name=".android.activity.exam.exam1.FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".android.activity.exam.exam1.TestLoginActivity"
+            android:label="@string/title_activity_test_login" />
+        <activity
+            android:name=".android.activity.exam.exam1.ItemListActivity"
+            android:label="@string/title_item_list" />
+        <activity
+            android:name=".android.activity.exam.exam1.ItemDetailActivity"
+            android:label="@string/title_item_detail"
+            android:parentActivityName=".android.activity.exam.exam1.ItemListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.simple.common.android.activity.exam.exam1.ItemListActivity" />
+        </activity>
+        <activity
+            android:name=".android.activity.exam.exam1.NavDrawerActivity"
+            android:label="@string/title_activity_nav_drawer" />
+        <activity
+            android:name=".android.activity.exam.exam1.TestScrollingActivity"
+            android:label="@string/title_activity_test_scrolling" />
+        <activity
+            android:name=".android.activity.exam.exam1.TestSettingsActivity"
+            android:label="@string/title_activity_test_settings" />
+        <activity
+            android:name=".android.activity.exam.exam1.TestTabbedActivity"
+            android:label="@string/title_activity_test_tabed" />
+        <activity android:name=".view.v7jar.cardview.CardViewActivity"></activity>
     </application>
 
 </manifest>

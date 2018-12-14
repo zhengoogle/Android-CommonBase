@@ -3,6 +3,14 @@ package com.simple.common;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.simple.common.android.activity.exam.exam1.BottomNavActivity;
+import com.simple.common.android.activity.exam.exam1.FullscreenActivity;
+import com.simple.common.android.activity.exam.exam1.ItemListActivity;
+import com.simple.common.android.activity.exam.exam1.NavDrawerActivity;
+import com.simple.common.android.activity.exam.exam1.TestLoginActivity;
+import com.simple.common.android.activity.exam.exam1.TestScrollingActivity;
+import com.simple.common.android.activity.exam.exam1.TestSettingsActivity;
+import com.simple.common.android.activity.exam.exam1.TestTabbedActivity;
 import com.simple.common.base.utils.PathUtils;
 import com.simple.common.debug.file.path.PathTestActivity;
 import com.simple.common.view.image.ImageViewActivity;
@@ -39,7 +47,7 @@ public class MainActivity extends FwPermissionActivity {
 
     @Override
     public void loadDatas() {
-        Intent intent = new Intent(this,ImageViewActivity.class);
+        Intent intent = new Intent(this,TestTabbedActivity.class);
         startActivity(intent);
         finish();
 
